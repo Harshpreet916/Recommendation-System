@@ -60,7 +60,7 @@ def index():
     Health_distinct_entities = sorted(extract_unique(Health_entities)) #done
     Sports_distinct_entities = sorted(extract_unique(Sports_entities)) #done
     # All_distinct_entities = sorted(extract_unique(All_entities)) #done
-
+    
     import spacy
 
     # Load a pre-trained spaCy NER model
@@ -110,7 +110,7 @@ def index():
     # Enter_df.drop(columns=['Name', 'Link'], inplace=True)
     # Enter_df = Enter_df.head(25)
 
-
+    #Loading
     # Load a pre-trained spaCy NER model
     nlp = spacy.load("en_core_web_sm")
 
@@ -185,6 +185,7 @@ def index():
     #             if ent.label_ in entity_tags:
     #                 extracted_products.append(ent.text)
 
+    
     #     return extracted_products
 
     # # Example list of text
